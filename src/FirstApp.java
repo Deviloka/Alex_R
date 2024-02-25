@@ -1,5 +1,7 @@
 import java.util.Arrays;
 import java.util.regex.Matcher;
+import java.util.stream.IntStream;
+
 //1. Создайте метод printThreeWords(), который при вызове должен отпечатать в столбец три слова: Orange, Banana, Apple.
 public class FirstApp {
     static void printThreeWords(){
@@ -102,17 +104,31 @@ public class FirstApp {
     }
 //    10. Задать целочисленный массив, состоящий из элементов 0 и 1. Например: [ 1, 1, 0, 0, 1, 0, 1, 1, 0, 0 ].
 //    С помощью цикла и условия заменить 0 на 1, 1 на 0;
-    static void massive(){
-        int[] arr = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0 };
+    static void massive() {
+        int[] arr = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
         System.out.println("oldArray " + Arrays.toString(arr));
 
-        for (int num = 0;num < arr.length; num += 1){
+        for (int num = 0; num < arr.length; num += 1) {
             int invert = arr[num] == 0 ? 1 : 0;
             arr[num] = invert;
         }
         System.out.println("newArray " + Arrays.toString(arr));
-        
     }
+
+//   11. Задать пустой целочисленный массив длиной 100. С помощью цикла заполнить его значениями 1 2 3 4 5 6 7 8 ... 100;
+    static void emptymassive() {
+        int[] arr = IntStream.rangeClosed(1,100).toArray();
+        System.out.println(Arrays.toString(arr));
+
+    }
+    static void myFoo() {
+        int list[] = new int[100];
+        for (int count = 0; count < list.length; count += 1) {
+            list[count] = count + 1;
+        }
+        System.out.println(Arrays.toString(list));
+    }
+
 
     public static void main (String[] args){
         printThreeWords();
@@ -125,6 +141,9 @@ public class FirstApp {
         loopPrinter("Hello world",4);
         Years(1948);
         massive();
+        emptymassive();
+        myFoo();
+
 
     }
 }
