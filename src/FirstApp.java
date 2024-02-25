@@ -75,9 +75,16 @@ public class FirstApp {
 
     static void checkTrueFalse(int a) {
         if (a < 0) {
-            System.out.print(true);
+            System.out.println(true);
         } else {
-            System.out.print(false);
+            System.out.println(false);
+        }
+    }
+//    8. Напишите метод, которому в качестве аргументов передается строка и число, метод должен отпечатать
+//    в консоль указанную строку, указанное количество раз;
+    static void loopPrinter(String message,Integer count){
+        for (int i = 1; i<= count;i += 1){
+            System.out.println("#" + i + " " + message);
         }
     }
 
@@ -89,7 +96,8 @@ public class FirstApp {
         compareNumbers();
         checkBoolean();
         comparator(10);
-        checkTrueFalse(5);
+        checkTrueFalse(10);
+        loopPrinter("Hello world",4);
 
     }
 }
