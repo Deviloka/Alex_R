@@ -87,7 +87,18 @@ public class FirstApp {
             System.out.println("#" + i + " " + message);
         }
     }
+//    9. Напишите метод, который определяет, является ли год високосным, и возвращает boolean (високосный - true,
+//     не високосный - false). Каждый 4-й год является високосным, кроме каждого 100-го, при этом каждый 400-й – високосный.
+    static void Years(int year){
+        Boolean everyFour = year %4 == 0;
+        Boolean everyHundred = year %100 == 0;
+        Boolean everyFourHundred = year %400 == 0;
 
+        Boolean answer = !everyFour || (everyHundred && !everyFourHundred);
+        String message = answer ? " не високосный": " високосный";
+
+        System.out.println(year + message );
+    }
 
     public static void main (String[] args){
         printThreeWords();
@@ -98,6 +109,7 @@ public class FirstApp {
         comparator(10);
         checkTrueFalse(10);
         loopPrinter("Hello world",4);
+        Years(1948);
 
     }
 }
