@@ -16,7 +16,7 @@ public class FirstApp {
 
     }
 
-
+public void
     public static void main (String[] args){
         printThreeWords();
         checkSumSign();
