@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.regex.Matcher;
 //1. Создайте метод printThreeWords(), который при вызове должен отпечатать в столбец три слова: Orange, Banana, Apple.
 public class FirstApp {
@@ -99,6 +100,19 @@ public class FirstApp {
 
         System.out.println(year + message );
     }
+//    10. Задать целочисленный массив, состоящий из элементов 0 и 1. Например: [ 1, 1, 0, 0, 1, 0, 1, 1, 0, 0 ].
+//    С помощью цикла и условия заменить 0 на 1, 1 на 0;
+    static void massive(){
+        int[] arr = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0 };
+        System.out.println("oldArray " + Arrays.toString(arr));
+
+        for (int num = 0;num < arr.length; num += 1){
+            int invert = arr[num] == 0 ? 1 : 0;
+            arr[num] = invert;
+        }
+        System.out.println("newArray " + Arrays.toString(arr));
+        
+    }
 
     public static void main (String[] args){
         printThreeWords();
@@ -110,6 +124,7 @@ public class FirstApp {
         checkTrueFalse(10);
         loopPrinter("Hello world",4);
         Years(1948);
+        massive();
 
     }
 }
