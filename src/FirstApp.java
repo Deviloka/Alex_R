@@ -1,3 +1,5 @@
+import java.util.regex.Matcher;
+
 public class FirstApp {
     static void printThreeWords(){
         System.out.println("Orange");
@@ -45,6 +47,17 @@ public class FirstApp {
             System.out.println (false);
         }
     }
+    static void comparator(int a) {
+        int myNumber =  Integer.signum(a);
+        if (myNumber >= 0) {
+            System.out.println("Положительное");
+        } else {
+            System.out.println("Отрицательное");
+        }
+
+    }
+
+
 
 
 
@@ -54,6 +67,7 @@ public class FirstApp {
         printColor();
         compareNumbers();
         checkBoolean();
+        comparator(10);
 
     }
 }
