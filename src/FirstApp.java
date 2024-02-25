@@ -34,12 +34,27 @@ public class FirstApp {
         peremen = (a >= b) ? "a >= b" : "a < b";
         System.out.println (peremen);
     }
+    static void checkBoolean() {
+        int a = 10;
+        int b = 10;
+        int total = a + b;
+        if (total >= 10 && total <= 20) {
+            System.out.println (true);
+        }
+        else {
+            System.out.println (false);
+        }
+    }
+
+
 
     public static void main (String[] args){
         printThreeWords();
         checkSumSign();
         printColor();
         compareNumbers();
+        checkBoolean();
+
     }
 }
 
