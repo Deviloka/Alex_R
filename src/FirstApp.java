@@ -17,7 +17,7 @@ public class FirstApp {
     }
 
     static void printColor(){
-        int value = -7;
+        int value = 1;
 
         if (value <= 0) {
             System.out.println("Красный");
@@ -27,10 +27,19 @@ public class FirstApp {
             System.out.println("Зеленый");
         }
     }
+    static void compareNumbers(){
+        int a = 10;
+        int b = 2;
+        String peremen;
+        peremen = (a >= b) ? "a >= b" : "a < b";
+        System.out.println (peremen);
+    }
+
     public static void main (String[] args){
         printThreeWords();
         checkSumSign();
         printColor();
+        compareNumbers();
     }
 }
 
