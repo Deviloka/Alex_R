@@ -1,10 +1,10 @@
 package school.lessons;
 
-public class Lesson_7_junit_5 {
-        public static void main(String[] args) {
+public class Lesson_7_testng {
+    public static void main(String[] args) {
 
-        int number = -5;
-        int factorial = getFactorial(number);
+        int number = -5; 
+        int factorial = getFactorial(number); 
         System.out.println("Факториал числа " + number + " равен: " + factorial);
     }
 
