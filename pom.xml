@@ -28,20 +28,20 @@
             <version>4.17.0</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
             <version>RELEASE</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-support</artifactId>
             <version>4.17.0</version>
             <scope>test</scope>
         </dependency>
-
-
     </dependencies>
 
 </project>
